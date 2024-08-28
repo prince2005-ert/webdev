@@ -1,1 +1,541 @@
-personal data
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="green">
+    <meta name="description" content="this a personal blog ment for the owner only">
+    <link rel="stylesheet" href="C:\Users\Prince\coding project\mywebsite.css">
+    <link rel="stylesheet" href="C:\Users\Prince\coding project\Css\mywebsite.css">
+    <link rel="import" href="C:\Users\Prince\coding project\Css\mywebsite.css">
+    <title>https://mywebsite.com</title>
+    
+   <style>
+    body{
+    background-color: rgb(252, 252, 252);
+    overflow: hidden;
+}
+.nav{
+    width: 100%;
+    height: fit-content;
+    padding: 0px;
+    display: flex;
+    color: rgba(16, 16, 16, 0.734);
+    justify-content: space-between;
+    background-color: ghostwhite;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.li{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+}
+li{
+    padding: 14px;
+    font-weight: bolder;
+    color: rgba(23, 22, 22, 0.844);
+    font-family: sans-serif;
+}
+button{
+    width: 80px;
+   height: 30px;
+    outline: none;
+    border: none;
+    margin: 0px;
+    margin-left: 8px;
+    color: rgb(29, 30, 30);
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    font-size: x-large;
+}
+.sec{
+    display: flex;
+    padding: 8px;
+}
+.friends{
+    width: 300px;
+    overflow: scroll;
+    padding: 10px;
+    margin-right: 20px;
+    display: block;
+    height: 580px;
+    background-color: rgba(240, 248, 255, 0);
+}
+.friendlist{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin-top: 8px;
+    padding: 4px;
+    background-color: rgba(248, 248, 255, 0.014);
+    color: blue;
+
+}
+.posts{
+    width: 750px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    height: 580px;
+    background-color: rgba(240, 248, 255, 0.005);
+}
+
+.contacts{
+    width: 380px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    height: 600px;
+    margin-left: 10px;
+    background-color: rgba(240, 248, 255, 0.005);
+}
+
+.postimg{
+    width: 50px;
+    border: 2px solid rgba(5, 147, 255, 0);
+    height: 40px;
+    border-radius: 200px;
+    margin: 4px;
+}
+.postimg1{
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 5, 5, 0);
+    border-radius: 200px;
+    
+    opacity: 0.8;
+    margin: 8px;
+}
+
+.pname{
+    color: rgba(59, 58, 58, 0.73);
+    padding-left: 10px;
+    width: fit-content;
+    font-family: sans-serif;
+    font-weight: normal;
+    
+}
+.pname1{
+    color: rgba(59, 58, 58, 0.73);
+    padding-left: 10px;
+    width: fit-content;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+.pnamei{
+    font-size: 13px;
+    font-weight: normal;
+}
+.chat{
+    height: 35px;
+    background-color: rgb(13, 80, 174);
+    width: 80px;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fellow{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.red{
+    color:green;
+    font-weight: normal;
+    padding: 8px;
+    font-family: sans-serif;
+    height: fit-content;
+    width: 1px;
+    border-radius: 1px;
+}
+.postvid{
+    width: 280px;
+    border-radius: 0px;
+    height: 200px;
+    padding: 0px;
+    display: block;
+    margin-bottom: 8px;
+}
+.time{
+    font-size: 10px;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+.user{
+    padding-top: 18px;
+    margin-top: 19px;
+}
+.pname1{
+    font-size: 12px;
+    text-align: left;
+    font-weight: normal;
+    color: rgba(69, 69, 68, 0.81);
+}
+
+.img2{
+    width: 694px;
+    margin-bottom: 14px;
+    height: 500px;
+    border-radius: 0px;
+}
+.img2:hover{
+  background-color: dodgerblue;
+   backdrop-filter: blur(0.5);
+}
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: lighter;
+}
+abbr{
+    text-decoration: none;
+}
+.chatcon{
+    width: 700px;
+    height: 60px;
+    background-color: aquamarine;
+    bottom: 0;
+    position: fixed;
+}
+li{
+    padding: 6px;
+    font-weight: normal;
+    list-style: none;
+    font-family: sans-serif;
+    color: rgb(119, 119, 120);
+}
+.search{
+    width: 200px;
+    height: 17px;
+    background-color: rgba(240, 248, 255, 0.007);
+    border: 1px solid rgba(128, 128, 128, 0);
+    outline: none;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.search:hover::placeholder{
+    color: rgb(6, 63, 63);
+    font-weight: normal;
+}
+.but{
+    height: 34px;
+    width: 90px;
+    font-weight: bold;
+    color: rgb(247, 243, 243);
+    border: none;
+    background-color: rgb(7, 102, 102);
+}
+.hoverme{
+    border: 1px solid gray;
+}
+.hoverme:hover{
+border: 2px solid rgb(7, 102, 102);
+}
+.text{
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: auto;
+    width: 530px;
+    overflow: hidden;
+    margin: 1px;
+    height: fit-content;
+    border: 1px solid rgba(135, 207, 235, 0.011);
+    padding: 20px;
+    background-color: turquoise;
+}
+.info{
+    font-size: small;
+    font-family: sans-serif;
+}
+.client{
+    list-style: disc;
+}
+   </style>
+</head>
+<body>
+    <div class="nav">
+    <div class="title" style="display: flex;justify-content: space-between;">
+        
+        <img src="http://127.0.0.1:5500/images/web8.png" alt="profile" width="57px" srcset="" height="57px" style="margin: 10px;">
+        <h3 style=" color: rgb(4, 49, 49); padding: 2px;font-family: sans-serif;font-size: 15px;">Prince Onyebuchi <br><span style="font-size: 13px;color: rgb(51, 50, 50);font-weight: normal;">Personal Account / <span id="date" title="Local Date And Time"></span></span></h3>
+
+    </div>
+    <div class="hoverme" style="width: fit-content; margin-top: 10px; padding: 1px;display: flex;height: fit-content;">
+
+        <form action="https//www.google.com" id="" class=""><img src="https://assets.msn.com/staticsb/statics/latest/icons-wc/icons/MSNButterfly.svg" height="15px" width="20px" alt="">
+        <input type="text" class="search" placeholder="Search Google" aria-label="Search Google" autocapitalize="sentences" title="Search Google [alt-shift-f]" accesskey="f" id="searchInput" autocomplete="off">
+        <input type="submit" class="but" value="Search" style="border-left: 1px solid gray;">
+    </form>
+    </div>
+    </div>
+
+    <div class="sec">
+        <div class="friends" style="overflow: scroll;">
+            <span style="color: rgb(32, 32, 32);font-family: sans-serif;">Table Of Content </span>
+            <hr>
+            <img src="http://127.0.0.1:5500/images/web8.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            <li title="Back To Top"><a href="#top" class="top">(Top)</a></li>
+            <li title="Upload CV"><a href="http://127.0.0.1:5500/emcass/emcassWebsite/webdev-UploadFile.html">Cv Upload</a></li>
+            <li title="About Emcass"><a href="#top"> About Emcass</a></li>
+            <li title="Information and Technology"><a href="http://127.0.0.1:5500/html/mywebsite.html#info">Information and Technology</a></li>
+            <li title="Multimedia and interactive content"><a href="http://127.0.0.1:5500/html/mywebsite.html#imd">Multimedia and interactive content</a></li>
+            <li title="Contact or Find Surport"><a href="http://127.0.0.1:5500/html/mywebsite.html#con">Contact or Find Surport</a></li>
+            <li title="See Also"><a href="http://127.0.0.1:5500/html/mywebsite.html#sal">See Also</a></li>
+            <li title="Reference"><a href="http://127.0.0.1:5500/html/mywebsite.html#ref">Reference</a></li>
+            <li title="History"><a href="http://127.0.0.1:5500/html/mywebsite.html#his"> History</a></li>
+            <li title="External Links"><a href="#">External Links</a></li>
+        
+        </div>
+        <div class="posts" style="width: fit-content;">
+
+
+<div class="text" style="color: aliceblue;" id="top">
+    <h1 style="height: fit-content;background-color: rgba(0, 255, 255, 0.214);padding: 20px; font-weight: normal; border: 1px solid rgb(6, 229, 245);color: black;">About Emcass Digital Company</h1><br><span class="info">
+        <b> <h1 style="height: fit-content; text-align: center;  background-color: rgba(0, 255, 255, 0);padding: 20px; font-weight: normal; border: 1px solid rgba(6, 229, 245, 0.004);color: rgb(255, 253, 253);">Emcass: Revolutionizing Digital Solutions ,Creating Applications And Device for the Modern World</h1></b><br><br>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYpYrZvFItBsDpzIMzADWt9S0ZvehNzW0rVw&s" width="100%" alt="">
+
+<br><br>
+        In today’s fast-paced digital era, businesses are constantly seeking innovative solutions to stay ahead of the competition. Emcass, a dynamic digital company, is leading the charge in transforming how businesses operate online. With a commitment to cutting-edge technology, unparalleled customer service, and a deep understanding of digital landscapes, Emcass is not just a service provider—it's a partner in your business's digital journey.
+        
+       <br><br><b> Who is Emcass?</b><br><br>
+        Emcass is a forward-thinking digital company that offers a comprehensive suite of services designed to meet the diverse needs of modern businesses. Whether you're a startup looking to establish a strong online presence or an established corporation aiming to optimize your digital strategies, Emcass has the expertise and resources to help you succeed.
+        <br>
+        Founded by a team of industry veterans, Emcass brings together a wealth of experience in digital marketing, software development, and IT solutions. The company’s mission is to empower businesses with the tools and strategies they need to thrive in a digital-first world.
+        <br>
+        <br><b>What Does Emcass Offer?</b><br><br>
+        Emcass’s service offerings are as diverse as the digital landscape itself. Here’s a closer look at what they bring to the table:
+        <br><br>
+        1. Digital Marketing Services:
+        In a world where online visibility is key to business success, Emcass provides a range of digital marketing services that include search engine optimization (SEO), social media marketing, content marketing, and pay-per-click (PPC) advertising. Their strategies are data-driven, ensuring that every campaign is tailored to meet specific business goals.
+        <br> <br>
+        2. Web and App Development:
+        Emcass specializes in creating stunning, responsive websites and mobile applications that not only look great but also deliver an exceptional user experience. Their development team works closely with clients to understand their needs and create custom solutions that drive engagement and conversions.
+        <br><br>
+        3. E-commerce Solutions:
+        For businesses looking to expand their reach and increase sales, Emcass offers robust e-commerce solutions. From building user-friendly online stores to integrating payment gateways and ensuring top-notch security, Emcass helps businesses tap into the growing world of online shopping.
+        <br><br>
+        4. IT Consulting and Support:
+        Emcass provides comprehensive IT consulting and support services to help businesses optimize their operations. Whether it's setting up a secure network, managing data, or implementing new software systems, Emcass ensures that your IT infrastructure is always running smoothly.
+        <br><br>
+        5. Branding and Design:
+        Your brand is your business’s identity, and Emcass helps you craft a brand that resonates with your target audience. From logo design to complete brand strategy development, their creative team ensures that your brand
+    
+    <br><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEKU2xAUJuStu8FEHYafN4HEBrZCqt8kbl2Q&s" width="100%">
+    
+    </span></div>
+ 
+    <div class="text" style="background-color: #07fde000;height: fit-content;" id="info">
+        <h2 style="height: fit-content;background-color: rgba(0, 255, 191, 0.651);padding: 20px;font-size: 12px; border: 1px solid rgba(128, 128, 128, 0);">Information and Technology</h2><br><span class="info">
+          <h1>  The Evolution and Impact of Information and Technology</h1>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFvPxrDt8cr-d2TtLhebb2dpN_0LA-8yOelg&s" width="100%"><br><br>
+In the 21st century, information and technology have become integral to almost every aspect of our lives. From the way we communicate to how we work, learn, and entertain ourselves, the rapid advancements in these fields have transformed the world in profound ways.
+
+<h1>Understanding Information and Technology</h1>
+Information refers to data that has been processed and organized to be meaningful and useful. It is the lifeblood of decision-making, innovation, and communication in the digital age. Technology, on the other hand, encompasses the tools, systems, and methods used to create, store, and manage information. The synergy between information and technology has driven unprecedented advancements and opportunities.
+
+<h1>The Digital Revolution</h1>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrESJwQ0T3qlgqoZE8R1kE5TqgSM7ELT1uvt3H8Ns65hJ2efEr0RvEeQDCbBkBANMID5w&usqp=CAU" width="100%">
+<br><br>
+The digital revolution, which began in the late 20th century, marked a significant turning point in the evolution of information and technology. The advent of computers, the internet, and mobile devices has led to a shift from analog to digital, enabling faster, more efficient, and more accessible ways to process and share information.
+<br><br>
+1. The Internet: The internet has been a game-changer, connecting people globally and enabling the rapid dissemination of information. It has opened up new avenues for communication, commerce, and education, creating a more interconnected world.
+<br><br>
+2. Mobile Technology: Smartphones and tablets have made information and communication more accessible than ever. With the ability to connect to the internet and access a plethora of apps, users can manage their personal and professional lives from virtually anywhere.
+<br><br>
+3. Cloud Computing: Cloud technology has revolutionized the way data is stored and managed. By offering scalable and flexible storage solutions, cloud computing allows users to access their information from any device, streamlining operations and enhancing collaboration.
+<h1>
+    The Role of Information and Technology in Modern Society</h1>
+1. Business Innovation
+
+Information and technology are central to modern business operations. Companies leverage data analytics to make informed decisions, enhance customer experiences, and drive growth. Technologies like artificial intelligence (AI) and machine learning are being used to automate processes, predict trends, and create new business models.
+<br><br>
+2. Education and Learning
+
+In the realm of education, technology has transformed traditional learning methods. Online courses, virtual classrooms, and educational apps provide diverse learning opportunities, making education more accessible to people around the world.
+<br><br>
+3. Healthcare Advances
+
+The healthcare industry has benefited immensely from technological advancements. Electronic health records (EHRs), telemedicine, and health monitoring devices have improved patient care, streamlined operations, and enabled better diagnosis and treatment.
+<br><br>
+4. Communication and Social Interaction
+
+Technology has reshaped the way we communicate and interact socially. Social media platforms, messaging apps, and video conferencing tools have made it easier to stay connected with others, share information, and build communities.
+    
+    </span>
+
+
+
+
+</div>
+     
+<div class="text" style="background-color: rgba(64, 62, 62, 0);padding: 20px;height: fit-content;" id="imd"> <h2 style="height: fit-content;background-color: rgba(0, 255, 191, 0.651);padding: 20px;font-size: 12px; border: 1px solid rgba(128, 128, 128, 0);">Multimedia and interactive content</h2><br><span style="display: flex;flex-wrap: wrap;"><span class="info" style="height: fit-content;">
+    
+    <h1>The Rise of Multimedia and Interactive Content: Transforming Digital Experiences</h1>
+
+    <img src="http://127.0.0.1:5500/images/web11.png"  width="100%" alt="http://127.0.0.1:5500/images/web11.png"><br><br>
+In an increasingly digital world, multimedia and interactive content are redefining how we engage with information and entertainment. These dynamic forms of content are not only capturing attention but also enhancing user experiences across various platforms. Let's explore how multimedia and interactive content are revolutionizing digital interactions.
+
+<h1>What is Multimedia Content?</h1>
+Multimedia content refers to the integration of multiple forms of media—such as text, images, audio, video, and animations—into a cohesive experience. This type of content engages multiple senses simultaneously, making it more immersive and appealing.
+
+</span></span></div>
+   
+<div class="text" style="background-color: rgba(64, 62, 62, 0);padding: 20px;height: fit-content;" id="con">
+    <h2 style="height: fit-content;background-color: rgba(0, 255, 191, 0.651);padding: 20px;font-size: 12px; border: 1px solid rgba(128, 128, 128, 0);">Contact or Find Surport</h2>
+    
+    <span class="info" style="height: fit-content;display: block;">
+        <h1>Service Provider Server (SPS)</h1>
+        Emcass has provide a great section that helps you to contact them when ever there is an issue or problem that needs to be handled
+        you also click on the link to get a service provider <br><a href="http://127.0.0.1:5500/emcass/emcassWebsite/serviceProvider.html" target="_blank" rel="noopener noreferrer">service-provider.org</a> or try calling manualy (+2349130312518)</span>
+
+        <h1>Higher Client For Assitance</h1>
+        <li class="client">Proferssor James Christhofer
+            <br><br>
+           <b> Work As</b> : Computer Engineer <br>
+            <b>Study At</b> : University Of Oxford <br>
+           <b> Email Address</b> : <a href="mailto:jameschristhofer245@gmail.com">jameschristhofer245@gmail.com</a> <br>
+            <b>Home Address</b> : N024 P.O.B B12 - Building (Sewden) <br><br>
+          Click To  Hire Me : <button type="submit" >Hire Me</button>
+
+        </li>
+
+        <li class="client">Proferssor Prince Onyebuchi
+            <br><br>
+           <b> Work As</b> : Computer Engineer <br>
+            <b>Study At</b> : University Of Oxford <br>
+           <b> Email Address</b> : <a href="mailto:princeonyebuchi149@gmail.com">princeonyebuchi149@gmail.com</a> <br>
+            <b>Home Address</b> : N025 P.O.B B13 - Building (Porthercourt) <br><br>
+          Click To  Hire Me : <button type="submit" >Hire Me</button>
+
+        </li>
+
+
+        <li class="client">Proferssor Alex James
+            <br><br>
+           <b> Work As</b> : Computer Engineer <br>
+            <b>Study At</b> : University Of Oxford <br>
+           <b> Email Address</b> : <a href="mailto:alexjames245@gmail.com">alexjames245@gmail.com</a> <br>
+            <b>Home Address</b> : N026 P.O.B B14 - Building (Porthercourt) <br><br>
+          Click To  Hire Me : <button type="submit" >Hire Me</button>
+
+        </li>
+
+
+
+
+        <li class="client">Proferssor Precious Christhofer
+            <br><br>
+           <b> Work As</b> : Computer Engineer <br>
+            <b>Study At</b> : University Of Oxford <br>
+           <b> Email Address</b> : <a href="mailto:jameschristhofer245@gmail.com">jameschristhofer245@gmail.com</a> <br>
+            <b>Home Address</b> : N027 P.O.B B15 - Building (Abuja-fct) <br><br>
+          Click To  Hire Me : <button type="submit" >Hire Me</button>
+
+        </li>
+
+
+
+
+
+
+
+
+</div> 
+<div class="text" style="background-color: rgba(64, 62, 62, 0);padding: 20px;height: fit-content;" id="ref">
+    <h2 style="height: fit-content;background-color: rgba(0, 255, 191, 0.651);padding: 20px;font-size: 12px; border: 1px solid rgba(128, 128, 128, 0);">Reference</h2>
+    
+    <span class="info" style="height: fit-content;display: flex;">Total Recall is a 1990 American science-fiction action film directed by Paul Verhoeven (pictured). Based on a 1966 short story by Philip K. Dick, the film stars Arnold Schwarzenegger, Rachel Ticotin, Sharon Stone, Ronny Cox, and Michael Ironside. It tells the story of Douglas Quaid (Schwarzenegger) and the shadow organization that tries to prevent him from recovering memories of his past as a Martian secret agent. Schwarzenegger convinced Carolco Pictures to develop the film with him as the star, after the project had lingered in development hell at multiple studios over sixteen years. The film was one of the most expensive ever made at the time, and became the fifth-highest-grossing film of the year. Reviewers liked its themes of identity and questioning reality, but criticized content perceived as vulgar and violent. The practical special effects were well received, earning the film an Academy Award, and the score by Jerry Goldsmith has been praised as one of his best works. (Full article...)
+
+        Recently featured: Turabay dynastyOuter WildsBattle of Winwick
+        ArchiveBy emailMore featured articlesAbout
+</span>
+</div>  
+
+  
+<div class="text" style="background-color: rgba(64, 62, 62, 0);padding: 20px;height: fit-content;" id="his">
+    <h2 style="height: fit-content;background-color: rgba(0, 255, 191, 0.651);padding: 20px;font-size: 12px; border: 1px solid rgba(128, 128, 128, 0);">History About Emcass</h2>
+    
+    <span class="info" style="height: fit-content;display: flex;">Total Recall is a 1990 American science-fiction action film directed by Paul Verhoeven (pictured). Based on a 1966 short story by Philip K. Dick, the film stars Arnold Schwarzenegger, Rachel Ticotin, Sharon Stone, Ronny Cox, and Michael Ironside. It tells the story of Douglas Quaid (Schwarzenegger) and the shadow organization that tries to prevent him from recovering memories of his past as a Martian secret agent. Schwarzenegger convinced Carolco Pictures to develop the film with him as the star, after the project had lingered in development hell at multiple studios over sixteen years. The film was one of the most expensive ever made at the time, and became the fifth-highest-grossing film of the year. Reviewers liked its themes of identity and questioning reality, but criticized content perceived as vulgar and violent. The practical special effects were well received, earning the film an Academy Award, and the score by Jerry Goldsmith has been praised as one of his best works. (Full article...)
+
+        Recently featured: Turabay dynastyOuter WildsBattle of Winwick
+        ArchiveBy emailMore featured articlesAbout
+
+
+</span>
+</div>
+</div>  
+    <script>
+        
+
+ //create date full funtion leting the user know the date or the utf
+ 
+    // If nothing as a parameter is given,
+// it represents the present date and time.
+let A = Date();
+
+// Printing present date and time.
+document.getElementById('date').innerHTML = A;
+console.log(A);
+
+
+ //fetching data using API
+
+ async function fetchData() {
+   try{
+      const api = await fetch('mywebsite.html');
+      const data = await api.json();
+      console.log(data);
+    }
+    catch(error){
+      console.log('error',error);
+    }
+ }
+
+ fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+
+
+
+//calling post element in userinterface
+const postItem = document.getElementById("post");
+const postButton = document.getElementById("button");
+const postSection = document.getElementById("section");
+
+//add eventlistener when calling post element in userinterface
+postButton.addEventListener('click', creatPost);
+
+/*open funtion when calling post element given the
+ userinterface a funtion when called*/
+
+ function creatPost(){
+    const userInput = postItem.value;
+    const userPost = document.createElement('p');
+    userPost.textContent = userInput;
+    postSection.appendChild(userPost);
+    postItem.value = "";
+ }
+    </script>
+</body>
+</html>
